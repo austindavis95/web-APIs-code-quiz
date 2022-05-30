@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;font-size: 22px;
+    background-color: white;
+}
+
+
+
+
+header {
+    display: flex; /* Flex container to display the child elements as flex with space between and wrap */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    color: rgb(7, 1, 12);
+    height: 60px;
+    font-size: 2vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;font-size: 22px;
+  }
+
+.btnHeader {
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    border: 0;
+    outline: 0; /* Remove border around button */
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;font-size: 20px;
+}
+
+.btnHeader:hover {
+
+    background-color: pink;
+}
+
+.btn {
+    border-radius: 12px;
+    border: 0;
+    outline: 0; /* Remove border around button */
+    background-color: rgb(49, 0, 174);
+    color: pink;
+    font-family: Arial, Helvetica, sans-serif;font-size: 10px;
+}
+
+.hide {
+    display: none;
+}

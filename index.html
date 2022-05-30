@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./assets/css/style.css">
+		<title> Coding Quiz! </title>
+
+
+
+	</head>
+
+	<body>
+		<header>
+            <div>
+                <button class="btnHeader" id="view-high-scores">View High Scores</button>
+            </div>
+            <div>
+                <p>Time Remaining: <span id="timeLeft">xxx</span></p>
+            </div>
+
+		</header>
+		<main>
+            <div id="mainDiv"> <!-- Container for grid items -->
+                <div id="gridContainer">
+                    <p id="questionDisplay">Welcome to our code Quiz!</p>
+                   
+                 
+                    <button class="btn" id="start-quiz">Start Quiz</button>
+                    <div id= "question-title"></div>
+                  <div id="choices"></div>
+                    <button class="btn" id="submitScore"></button> <!-- Grid nows where to put next item.-->
+    
+                </div>
+                <div id="answerCorrectWrongGrid"></div>
+                <p id=answerCorrectWrong></p>
+                </div>
+                <div id= "feedback" class= "feedback hide"></div>
+
+                <p id="finalScoreDisplay">Your final score: </p>
+                <p id="enterInitials"><input type= "text" id= "initials" />
+                <button id="submit">Submit</button></p>
+                <ol id="highscores"></ol>
+    
+        
+
+		</main>
+        <script src="assets/js/game.js"></script>
+
+
+	</body>
+</html>
