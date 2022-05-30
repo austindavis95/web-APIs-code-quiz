@@ -1,55 +1,123 @@
 * {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
     background-color: white;
 }
 
-
-
-
 header {
-    display: flex; /* Flex container to display the child elements as flex with space between and wrap */
+    display: flex; 
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
     color: rgb(7, 1, 12);
     height: 60px;
     font-size: 2vw;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;font-size: 22px;
-  }
-
-.btnHeader {
-    border-radius: 10px;
-    background-color: white;
-    text-decoration: none;
-    border: 0;
-    outline: 0; /* Remove border around button */
-    color: blueviolet;
-    font-family: Arial, Helvetica, sans-serif;font-size: 20px;
-}
-
-.btnHeader:hover {
-
-    background-color: pink;
-}
-
-.btn {
-    border-radius: 12px;
-    border: 0;
-    outline: 0; /* Remove border around button */
-    background-color: rgb(49, 0, 174);
-    color: pink;
-    font-family: Arial, Helvetica, sans-serif;font-size: 10px;
+    padding: 10px 10px 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
 }
 
 .hide {
     display: none;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 10px;
+    border: 0;
+    outline: 0; 
+    background-color:  blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:  darkslateblue;
+}
+
+/* High Scores Button */
+#view-high-scores {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    border: 0;
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#view-high-scores:hover {
+    background-color: #eee;
+}
+
+#timer {
+    padding: 10px;
+}
+
+/* Container for answer choices */
+#choices {
+    text-align: center;
+}
+
+/* Answer choices */
+.choice {
+    border-radius: 12px;
+    padding: 10px;
+    border: 0;
+    outline: 0; 
+    background-color:  blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.choice:hover {
+    background-color:  darkslateblue;
+}
+
+/* Prompt after quiz for initials */
+#enterInitials {
+    font-size: 0;
+}
+
+#initials {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+/* Submit button to save score */
+#submit {
+    border-radius: 0;
+    padding: 10px;
+    border: 0;
+    outline: 0; 
+    background-color:  blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    width: 150px;
+    margin: 10px auto;
+}
+
+/* List of high scores */
+#highscores {
+    list-style: none;
 }

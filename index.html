@@ -6,48 +6,43 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./assets/css/style.css">
 		<title> Coding Quiz! </title>
-
-
-
 	</head>
 
 	<body>
 		<header>
             <div>
-                <button class="btnHeader" id="view-high-scores">View High Scores</button>
+                <button id="view-high-scores">View High Scores</button>
             </div>
-            <div>
+            <div id="timer">
                 <p>Time Remaining: <span id="timeLeft">xxx</span></p>
             </div>
-
 		</header>
 		<main>
-            <div id="mainDiv"> <!-- Container for grid items -->
-                <div id="gridContainer">
-                    <p id="questionDisplay">Welcome to our code Quiz!</p>
-                   
-                 
-                    <button class="btn" id="start-quiz">Start Quiz</button>
-                    <div id= "question-title"></div>
-                  <div id="choices"></div>
-                    <button class="btn" id="submitScore"></button> <!-- Grid nows where to put next item.-->
-    
-                </div>
-                <div id="answerCorrectWrongGrid"></div>
-                <p id=answerCorrectWrong></p>
-                </div>
-                <div id= "feedback" class= "feedback hide"></div>
+            <div id="start-quiz-section">
+                <p id="startQuizMessage">Welcome to our code Quiz!</p>
+                <button class="btn" id="start-quiz">Start Quiz</button>
+            </div>
+            <div id="quiz-section">
+                <div id= "question-title"></div>
+                <div id="choices"></div>
+                <div id="feedback" class="feedback hide"></div>
+            </div>
 
+
+            <div id="final-score-section" class="hide">
+                <h2>All Done!</h2>
                 <p id="finalScoreDisplay">Your final score: </p>
-                <p id="enterInitials"><input type= "text" id= "initials" />
+                <p id="enterInitials"><input type= "text" id= "initials" placeholder="Enter Your Initials"/>
                 <button id="submit">Submit</button></p>
-                <ol id="highscores"></ol>
-    
-        
+            </div>
 
+            <div id="high-score-section" class="hide">
+                <h2>High Scores</h2>
+                <ol id="highscores"></ol>
+                <button id="go-back-button" class="btn">Go Back</button>
+                <button id="clear-high-scores" class="btn">Clear High Scores</button>
+            </div>
 		</main>
         <script src="assets/js/game.js"></script>
-
-
 	</body>
 </html>
